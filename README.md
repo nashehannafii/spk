@@ -7,7 +7,7 @@
     <br>
 </p>
 
-Aplikasi ini digunakan untuk membantu warung-warung dalam menentukan barang apa yang menjadi rekomendasi untuk dijual.
+This application is used to assist stalls in determining what items are recommended for sale.
 
 [nashehannafii](http://nashehannafii.github.io) contac me 
 
