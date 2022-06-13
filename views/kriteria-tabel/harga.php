@@ -1,5 +1,6 @@
 <?php
 
+use app\models\KriteriaTabel;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
@@ -20,7 +21,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Buat Bobot Harga', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); 
+    ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -29,7 +31,18 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             // 'id_kriteria',
-            'nama_kriteria',
+            // 'nama_kriteria',
+            // [
+            //     'attribute' => 'nama_kriteria',
+            //     'label' => 'Nama Kriteria',
+            //     'format' => 'raw',
+            //     'value' => function ($model, $url) {
+            //         // $harga = KriteriaTabel::find()->where([
+            //         //     'nama_kriteria' => 'keuntungan',
+            //         // ])->all();
+            //         return $model;
+            //     },
+            // ],
             'kriteria',
             'bobot',
             // [
